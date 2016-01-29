@@ -1,0 +1,523 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,video {margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-family:inherit;font-size:100%;vertical-align:baseline}
+body { line-height: 1; color: #fff; background: transparent; -webkit-font-smoothing: antialiased;  }
+ol,ul { list-style:none; }
+table{ border-collapse:separate; border-spacing:0; vertical-align:middle; }
+caption,th,td { text-align:left; font-weight:normal; vertical-align:middle; }
+.disable-hover { pointer-events: none; }
+a img{ border:none; }
+a { text-decoration: none; }
+a:link { color: #fff; }
+a:visited { color: #fff; }
+.start-logo {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index: 2000;
+}
+
+
+#wrapper { position: relative; height: 100%; min-height: 100%; min-width: 1000px; }
+
+/* ----------- ШАПКА------------- */
+
+.header {
+	bottom: 0;
+	position: fixed;
+	width: 100%;
+	min-width: 1000px;
+	height: 70px;
+	background: url(img/bg_header.png);
+	z-index: 2500;
+}
+
+.logo-cont {
+	position: absolute;
+	top: 50px;
+	left: 60px;
+	z-index: 150;
+}
+
+.logo {
+	width: 320px;
+	height: 135px;
+}
+
+.logo1 {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -94px;
+	margin-top: -41px;
+	width: 187px;
+	height: 82px;
+}
+
+
+.arrow_portf {
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	right: 40px;
+	bottom: 0;
+	z-index: 1500;
+}
+
+.menu {
+	position: absolute;
+	width: 540px;
+	text-align: center;
+}
+
+.menu-fonts {
+	font-family: Segoe UI;
+	font-size: 12pt;
+	padding: 24px 15px 25px 15px;
+	transition: all ease 0.3s;
+	line-height: 75px; 
+	letter-spacing: 0;
+}
+
+.menu-fonts:hover {
+	color: #e65f35;
+}
+
+
+.soc-block {
+	position: absolute;
+	right: 60px;
+	top: 58px;
+	z-index: 150;
+}
+
+.vk_icon, .inst_icon, .fb_icon, .vimeo_icon{
+	width: 45px;
+	height: 45px;
+}
+
+/*----------- ВИДЕО ------------*/
+
+.back {
+	position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+    width: 100%;
+}
+
+.back:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../img/top-overlay.png) repeat;
+}
+
+
+.back .video-header {
+	min-width: 100%; 
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	display: inline;
+}
+
+
+#slider {
+	position: relative;
+	overflow: hidden;
+	left: 0;
+	top: 0;
+	z-index: 100;
+}
+
+
+
+.mid-title {
+	position: absolute;
+	width: 500px;
+	height: 160px;
+	left: 60px;
+	bottom: 100px;
+}
+
+.mid-title > .one {
+    font-family: Georgia,Times,"Times New Roman",serif;
+    max-width: 37%;
+    font-style: italic;
+	font-size: 50pt;
+    line-height: 1.182em;
+    color: #fff;
+}
+
+
+
+/*----------- ПОРТФОЛИО ------------*/
+
+#line {
+	height: 1px;
+	background-color: #a5a5a5;
+}
+
+.portfolio {
+	position: relative;
+	width: 100%;
+	background: url('img/bg_portf.png');
+	/*
+	background: #0f2931; 
+	background: -moz-linear-gradient(45deg,  #0f2931 0%, #0f2931 46%, #491f51 100%); 
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#0f2931), color-stop(46%,#0f2931), color-stop(100%,#491f51)); 
+	background: -webkit-linear-gradient(45deg,  #0f2931 0%,#0f2931 46%,#491f51 100%); 
+	background: -o-linear-gradient(45deg,  #0f2931 0%,#0f2931 46%,#491f51 100%); 
+	background: -ms-linear-gradient(45deg,  #0f2931 0%,#0f2931 46%,#491f51 100%); 
+	background: linear-gradient(45deg,  #0f2931 0%,#0f2931 46%,#491f51 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f2931', endColorstr='#491f51',GradientType=1 ); 
+    */
+}
+
+.showreel {
+	position: absolute;
+	width: 100%;
+	height: 350px;
+}
+
+.videos {
+	position: relative;
+	min-width: 1000px;
+}
+
+.video-preview {
+	position: relative;
+	list-style: none;
+	display: inline-block;
+	margin-left: -1px;
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.video-preview:hover {
+	cursor: pointer;
+}
+
+.play-btn {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+
+/* --------------- МОДАЛЬНОЕ ОКНО ----------------- */
+#modal_form {
+	width: 70%; 
+	position: fixed; /* чтoбы oкнo былo в видимoй зoне в любoм месте */
+	top: 50%; /* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт */
+	left: 50%; /* пoлoвинa экрaнa слевa */
+	opacity: 1; /* пoлнoстью прoзрaчнo для aнимирoвaния */
+	border-radius: 3px;
+	box-shadow: 0 0 7px #222;
+}
+
+/* Кнoпкa зaкрыть для тех ктo в тaнке) */
+#modal_close {
+	z-index: 201;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	right: -55px;
+	opacity: .5;
+	cursor: pointer;
+	display: block;
+	background: url(img/close.png) 100% 100% no-repeat;
+	background-size: cover;
+	transition: all ease 0.2s;
+}
+
+#modal_close:hover {
+	opacity: 1;
+}
+
+/* Пoдлoжкa */
+#overlay {
+	z-index: -1; /* пoдлoжкa дoлжнa быть выше слoев элементoв сaйтa, нo ниже слoя мoдaльнoгo oкнa */
+	position: fixed; /* всегдa перекрывaет весь сaйт */
+	opacity: 0; /* нo немнoгo прoзрaчнa */
+	background-image: url(img/bg_portf.png);
+	width: 100%; 
+	height: 100%; /* рaзмерoм вo весь экрaн */
+	top: 0; 
+	left: 0; /* сверху и слевa 0, oбязaтельные свoйствa! */
+}
+
+#l-arrow, #r-arrow  {
+	position: absolute;
+	width: 40px;
+	height: 70px;
+	top: 42%;
+	background-image: url(img/l_arrow.png);
+	background-size: cover;
+	opacity: .5;
+	transition: all ease 0.2s;
+	cursor: pointer;
+}
+
+#r-arrow {
+	right: -61px;
+	background-image: url(img/r_arrow.png);
+}
+
+#l-arrow {
+	left: -61px;
+}
+
+#l-arrow:hover, #r-arrow:hover {
+	opacity: 1;
+}
+
+/* --------------- НАША КОМАНДА ----------------- */
+
+.team {
+	position: relative;
+	width: 100%;
+	min-height: 1010px;
+	background: url(img/bg_portf.png);
+	/*
+	background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-image: url(img/bg2_blur.jpg);
+    */
+}
+
+.rotator {
+	position: absolute;
+	border: 1px solid #fff;
+	width: 800px;
+	height: 450px;
+	left: 50%;
+	top: 110px;
+	margin-left: -400px;
+	z-index: 0;
+}
+
+.rotator ul li {
+    position: absolute;
+    list-style: none;
+    width: 100%;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.rotator ul li.show1 {
+	z-index: 101;
+}
+
+.rotator-preview ul li.show2 {
+	z-index: 101;
+}
+
+.team-title {
+	font-family: Segoe UI;
+	font-size: 28pt;
+	text-align: center;
+	position: absolute;
+	width: 300px;
+	left: 50%;
+	top: 35px;
+	margin-left: -150px;
+}
+
+#rot-l-arrow, #rot-r-arrow  {
+	position: absolute;
+	width: 40px;
+	height: 70px;
+	top: 170px;
+	background-image: url(img/l_arrow.png);
+	background-size: cover;
+	opacity: .5;
+	transition: all ease 0.2s;
+	cursor: pointer;
+}
+
+#rot-r-arrow {
+	right: -61px;
+	background-image: url(img/r_arrow.png);
+}
+
+#rot-l-arrow {
+	left: -61px;
+}
+
+#rot-l-arrow:hover, #rot-r-arrow:hover {
+	opacity: 1;
+}
+
+.rotator-preview {
+	position: absolute;
+	width: 805px;
+	left: 50%;
+	margin-left: -397px;
+	top: 565px;
+}
+
+.rotator-preview ul li {
+	position: relative;
+	background-color: #fff;
+	display: inline-block;
+    list-style: none;
+    width: 96px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.underline {
+	width: 100%;
+	height: 3px;
+	position: relative;
+	top: 67px;
+	background-color: #fff;
+	opacity: 0;
+}
+
+.descr {
+	font-family: Segoe UI Light;
+	font-size: 18pt;
+	text-align: center;
+	position: absolute;
+	width: 900px;
+	left: 50%;
+	top: 680px;
+	margin-left: -450px;
+	line-height: 1.25;
+}
+
+.contacts {
+	position: relative;
+	width: 100%;
+	min-height: 650px;
+	background: url(img/bg_header.png);
+}
+
+.cont-title {
+	font-family: Segoe UI;
+	font-size: 28pt;
+	text-align: center;
+	position: absolute;
+	width: 300px;
+	left: 50%;
+	top: 80px;
+	margin-left: -150px;
+}
+
+.cont-descr {
+	font-family: Segoe UI Light;
+	font-size: 18pt;
+	text-align: center;
+	position: absolute;
+	width: 900px;
+	left: 50%;
+	top: 180px;
+	margin-left: -450px;
+	line-height: 1.5;
+}
+
+#feedback-form {
+	font-family: Segoe UI Light;
+	font-size: 18pt;
+	text-align: center;
+	position: absolute;
+    width: 500px;
+    height: 300px;
+    left: 50%;
+    top: 480px;
+    margin-left: -250px;
+    margin-top: -150px;
+
+}
+
+#feedback-form [type="text"] {
+	position: absolute;
+	left: 0;
+	width: 220px;
+	height: 20px;
+	font-size: 13pt;
+	font-family: Segoe UI Light;
+}
+
+#feedback-form [type="tel"] {
+	position: absolute;
+	width: 220px;
+	right: 0;
+	height: 20px;
+	font-size: 13pt;
+	font-family: Segoe UI Light;
+}
+
+#feedback-form [name="contactFF"] {
+	position: absolute;
+	top: 55px;
+	left: 0;
+	height: 20px;
+	width: 478px;
+	font-size: 13pt;
+	font-family: Segoe UI Light;
+}
+
+#feedback-form [required] {
+    margin: 2px 0 2% 0;
+    padding: 2%;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 3px;
+    box-shadow: 0 1px 2px -1px rgba(0,0,0,.2) inset, 0 0 transparent;
+}
+#feedback-form [required]:hover {
+    border-color: #7eb4ea;
+    box-shadow: 0 1px 2px -1px rgba(0,0,0,.2) inset, 0 0 transparent;
+}
+#feedback-form [required]:focus {
+    outline: none;
+    border-color: #7eb4ea;
+    box-shadow: 0 1px 2px -1px rgba(0,0,0,.2) inset, 0 0 4px rgba(35,146,243,.5);
+    transition: .2s linear;
+}
+#feedback-form [type="submit"] {
+	font-family: Segoe UI Light;
+	position: absolute;
+	top: 125px;
+	left: 50%;
+	margin-left: -75px;
+	width: 150px;
+    padding: 2%;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.2) inset;
+    background: #ee7c2a;
+    color: #fff;
+}
+#feedback-form [type="submit"]:hover {
+    opacity: .8;
+}
+#feedback-form [type="submit"]:focus {
+    box-shadow: 0 1px 1px #fff, inset 0 1px 2px rgba(0,0,0,.5), inset 0 -1px 0 rgba(0,0,0,.05);
+}
